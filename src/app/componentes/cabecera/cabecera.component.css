@@ -1,35 +1,34 @@
-.panel
-{
-    height: 200px;
-    background-image: url("/TP_LAV4_2017/assets/imagenes/cabecera.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.black {
+    background-color: black;
+    margin-bottom: 1rem;
+}
+
+.contenedor {
+    text-align: center;
+    margin: auto;
+    display: table;
+}
+
+h1 {
+    float: left;
     position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-.hero-text {
-text-align: center;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-color: #3E06B0;
+h1 span {
+    position: absolute;
+    right: 0;
+    width: 0;
+    background-color: #C0DE9A;
+    border-left: 1.5px solid #000;
+    animation: maquina 4s infinite alternate steps(17);
 }
 
-.hero-text a {
-border: none;
-outline: 0;
-display: inline-block;
-padding: 10px 25px;
-color: black;
-background-color: #ddd;
-text-align: center;
-cursor: pointer;
-}
-
-.hero-text a:hover {
-background-color: #555;
-color: white;
+@keyframes maquina {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
 }
