@@ -1,24 +1,36 @@
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-                                  
-          </button>
-            <a class="navbar-brand" routerLink="/Principal">Inicio</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li class="active"><a routerLink="/Juegos">Menú de Juegos</a></li>
-                <li><a data-toggle="tooltip" title="Hooray!" (click)="Juego('Adivina')">Adivina</a></li>
-                <li><a (click)="Juego('Agilidad')">Agilidad</a></li>
-                <li><a (click)="Juego('AdivinaMasListado')">Adivina+listado</a></li>
-                <li><a (click)="Juego('AgilidadaMasListado')">Agilidad+listado</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Mis Datos</a></li>
-                <li><a href="/Login"><span class="glyphicon glyphicon-log-out"></span> Salir</a></li>
-            </ul>
-        </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><i class="fas fa-gamepad"></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Juegos
+          </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #343A40; color:white; ">
+                    <a class="dropdown-item " data-toggle="tooltip " title="Hooray! " (click)="Juego( 'Adivina') ">Adivina</a>
+                    <a class="dropdown-item " (click)="Juego( 'Agilidad') ">Agilidad</a>
+                    <div class="dropdown-divider "></div>
+                    <a class="dropdown-item " (click)="Juego( 'AdivinaMasListado') ">Adivina+listado</a>
+                    <a class="dropdown-item " (click)="Juego( 'AgilidadaMasListado') ">Agilidad+listado</a>
+                </div>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link disabled " href="# ">Disabled</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right ">
+            <button type="button " class="btn btn-success mr-3 ">Mis Datos <i class="fas fa-address-card "></i></button>
+            <button type="button " class="btn btn-outline-light ">Salir <i class="fas fa-sign-out-alt "></i></button>
+        </ul>
     </div>
 </nav>
