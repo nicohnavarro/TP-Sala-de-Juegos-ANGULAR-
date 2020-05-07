@@ -1,0 +1,14 @@
+<div class="contenedor">
+
+    <div class="maincontainer" *ngFor="let carta of cartas">
+        <div class="thecard">
+            <div class="thefront" (click)="Voltear()">
+                <img src="../../../assets/imagenes/cartas.PNG" alt="">
+            </div>
+            <div class="theback">
+                <img [src]="carta" alt="">
+            </div>
+        </div>
+    </div>
+
+</div>

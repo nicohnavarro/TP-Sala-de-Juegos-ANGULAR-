@@ -1,0 +1,63 @@
+.contenedor {
+    display: inline-block;
+    margin: 20px;
+}
+
+.maincontainer {
+    position: relative;
+    width: 250px;
+    height: 320px;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 40px;
+}
+
+.thecard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    border-radius: 20px;
+}
+
+.thefront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: red;
+    color: #333;
+    border-radius: 20px;
+}
+
+.thefront img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.theback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: black;
+    color: #333;
+    transform: rotateY(180deg);
+    border-radius: 20px;
+}
+
+.theback img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.thecard:hover {
+    transform: rotateY(180deg);
+}
+
+.voltear {
+    transform: rotateY(180deg);
+}
