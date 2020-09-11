@@ -1,14 +1,24 @@
 <div class="contenedor">
 
-    <div class="maincontainer" *ngFor="let carta of cartas">
+    <!-- <div class="maincontainer" *ngFor="let carta of cartas">
         <div class="thecard">
-            <div class="thefront" (click)="Voltear()">
+            <div class="thefront" (click)="Voltear($event)">
                 <img src="../../../assets/imagenes/cartas.PNG" alt="">
             </div>
             <div class="theback">
                 <img [src]="carta" alt="">
             </div>
         </div>
+    </div> -->
+
+    <div class="gameContainer">
+        <div *ngFor="let carta of cartas">
+            <div class="memoryCard" (click)="Voltear($event)">
+                <img [src]="carta" class="front" alt="">
+                <img src="../../../assets/imagenes/cartas.PNG" class="back" alt="">
+            </div>
+        </div>
+
     </div>
 
 </div>

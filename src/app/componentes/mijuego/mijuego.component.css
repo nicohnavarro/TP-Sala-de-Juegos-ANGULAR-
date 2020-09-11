@@ -1,6 +1,9 @@
-.contenedor {
+/* .contenedor {
     display: inline-block;
     margin: 20px;
+    background-color: black;
+    margin: auto;
+    border-radius: 29px;
 }
 
 .maincontainer {
@@ -9,6 +12,7 @@
     height: 320px;
     display: inline-block;
     margin: 20px;
+    margin-left: 20px;
     border-radius: 40px;
 }
 
@@ -19,6 +23,8 @@
     transform-style: preserve-3d;
     transition: all 0.5s ease;
     border-radius: 20px;
+    margin: auto;
+    margin-left: 50px;
 }
 
 .thefront {
@@ -54,10 +60,60 @@
     border-radius: 20px;
 }
 
-.thecard:hover {
+.thecard:active {
+    transform: rotateY(180deg);
+} */
+
+.voltear {
     transform: rotateY(180deg);
 }
 
-.voltear {
+.contenedor {
+    height: 80vh;
+    background-color: #ff3434;
+    display: flex;
+}
+
+.gameContainer {
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    display: inline-block;
+    perspective: 800px;
+    background-color: black;
+}
+
+.memoryCard {
+    width: 83%;
+    height: 23%;
+    margin: 5px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.memoryCard:active {
+    transform: scale(0.95);
+    transition: transform 0.2s ease-in-out;
+}
+
+.memoryCard.flip {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+.front,
+.back {
+    background-color: #ff5252;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front {
     transform: rotateY(180deg);
 }

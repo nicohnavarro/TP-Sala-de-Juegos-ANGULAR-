@@ -25,7 +25,8 @@ export class MijuegoComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  Voltear(){
-    console.log("no anda");
+  Voltear(carta){
+    console.log("no anda",carta);
+    carta.target.classList.toggle('voltear');
   }
 }
