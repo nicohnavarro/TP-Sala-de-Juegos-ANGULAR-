@@ -4,7 +4,7 @@ Trabajo práctico obligatorio para la promoción directa
 ##Nicolás Navarro 🚀
 
 
-# https://nicohnavarrolabo4tp.herokuapp.com/
+# https://nicohnavarro-tp-salajuegos.herokuapp.com/
 
 ## Autores ✒️
 
