@@ -1,0 +1,16 @@
+h3, p {
+    color:white;
+}
+.img-circle{
+    border-radius: 2rem;
+}
+
+.imagenDeQuienSoy{
+    border-radius: 3rem;
+    width:80%;
+    height: 60%;
+}
+
+.col-sm-4 p{
+    min-height: 10%;
+}

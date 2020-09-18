@@ -1,0 +1,39 @@
+nav{
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    color:white;
+}
+.btn-success:hover{
+    background-color: white;
+    color: blue;
+    border:1px solid blue;
+}
+
+.btn-success{
+    background-color: blue;
+    color: white;
+    border:1px solid blue;
+}
+
+.btn-outline-success{
+    background-color: transparent;
+    color: white;
+    border:1px solid blue;
+}
+
+.btn-outline-success:hover{
+    background-color: blue;
+    color: white;
+    border:1px solid blue;
+}
+
+.navbar-collapse{
+    color:white;
+}
+
+.navbar-toggler-icon{
+    color:white;
+}

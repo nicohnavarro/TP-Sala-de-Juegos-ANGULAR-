@@ -54,6 +54,7 @@ import { AgmCoreModule } from '@agm/core';
 import { InputJugadoresComponent } from './componentes/input-jugadores/input-jugadores.component';
 import { SexoPipe } from './pipes/sexo.pipe';
 import { MijuegoComponent } from './componentes/mijuego/mijuego.component';
+import { NavBarComponent } from './componentes/nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -80,7 +81,8 @@ import { MijuegoComponent } from './componentes/mijuego/mijuego.component';
     JugadoresListadoComponent,
     InputJugadoresComponent,
     SexoPipe,
-    MijuegoComponent
+    MijuegoComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,

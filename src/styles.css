@@ -1,11 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
+    min-width:100vw;
     background-image: url('./assets/imagenes/fondo.jpg');
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
-    background-size: 100% auto;
 }
 
 /*!

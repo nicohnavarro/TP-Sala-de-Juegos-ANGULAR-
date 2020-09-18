@@ -1,9 +1,9 @@
 .media {
-    border: 1px solid #BFDD99;
+    border: 1px solid #ffffff;
     margin: 1rem 2rem;
     padding: 0.1rem;
     border-radius: 2rem;
-    background-color: #BFDD99;
+    background-color: #1d13a8b4;
 }
 
 .media-image {
@@ -18,14 +18,14 @@
 }
 
 a.solapa :hover {
-    background-color: #28A745;
+    background-color: #0a184d;
     border-radius: 15px;
 }
 
 .jumbotran {
     margin: 0% 5%;
     padding: 1%;
-    background-color: rgba(0, 0, 0, 0.102);
-    color: #fff;
+    background-color: rgba(16, 17, 77, 0.102);
+    color: rgb(0, 0, 0);
     border-radius: 15px;
 }
