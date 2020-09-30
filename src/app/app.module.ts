@@ -59,6 +59,8 @@ import { AngularFireModule} from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import {environment} from './../environments/environment';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
+import { PiedraPapelTijeraComponent } from './componentes/piedra-papel-tijera/piedra-papel-tijera.component';
+import { TatetiComponent } from './componentes/tateti/tateti.component';
 
 @NgModule({
   declarations: [
@@ -86,7 +88,9 @@ import {AngularFirestoreModule} from '@angular/fire/firestore';
     InputJugadoresComponent,
     SexoPipe,
     MijuegoComponent,
-    NavBarComponent
+    NavBarComponent,
+    PiedraPapelTijeraComponent,
+    TatetiComponent
   ],
   imports: [
     BrowserModule,

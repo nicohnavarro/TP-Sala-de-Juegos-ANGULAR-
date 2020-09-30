@@ -42,4 +42,8 @@ filtrado:any;
     });
   }
 
+  getUsuarioActual(){
+    return localStorage.getItem("user")
+  }
+
 }

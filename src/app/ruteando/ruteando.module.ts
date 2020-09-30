@@ -22,6 +22,9 @@ import { ListadoDePaisesComponent } from '../componentes/listado-de-paises/lista
 import { MapaDeGoogleComponent } from '../componentes/mapa-de-google/mapa-de-google.component'
 import { JugadoresListadoComponent } from '../componentes/jugadores-listado/jugadores-listado.component';
 import { MijuegoComponent } from '../componentes/mijuego/mijuego.component';
+import { PiedraPapelTijeraComponent } from '../componentes/piedra-papel-tijera/piedra-papel-tijera.component';
+import { TatetiComponent } from '../componentes/tateti/tateti.component';
+import { AnagramaComponent } from '../componentes/anagrama/anagrama.component';
 
 
 // declaro donde quiero que se dirija
@@ -43,7 +46,10 @@ children:
      {path: 'Adivina' , component: AdivinaElNumeroComponent},
       {path: 'AdivinaMasListado' , component: AdivinaMasListadoComponent},
       {path: 'AgilidadaMasListado' , component: AgilidadMasListadoComponent},
+      {path: 'PiedraPapelTijera' , component: PiedraPapelTijeraComponent},
       {path: 'Mijuego' , component: MijuegoComponent},
+      {path: 'Tateti' , component: TatetiComponent},
+      {path: 'Anagrama' , component: AnagramaComponent},
       {path: 'Agilidad' , component: AgilidadAritmeticaComponent}]
 },
 {path: '**' , component: ErrorComponent},
