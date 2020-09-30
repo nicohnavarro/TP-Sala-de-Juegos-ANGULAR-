@@ -1,6 +1,7 @@
 nav{
-    font-size: large;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    font-family: 'Play', sans-serif !important;
+    background-color: #4579e2!important;
 }
 
 a {
@@ -8,26 +9,26 @@ a {
 }
 .btn-success:hover{
     background-color: white;
-    color: blue;
-    border:1px solid blue;
+    color: #2d55aa;
+    border:1px solid #2d55aa;
 }
 
 .btn-success{
-    background-color: blue;
+    background-color: #2d55aa;
     color: white;
-    border:1px solid blue;
+    border:1px solid #2d55aa;
 }
 
 .btn-outline-success{
     background-color: transparent;
     color: white;
-    border:1px solid blue;
+    border:1px solid #2d55aa;
 }
 
 .btn-outline-success:hover{
-    background-color: blue;
+    background-color: #2d55aa;
     color: white;
-    border:1px solid blue;
+    border:1px solid #2d55aa;
 }
 
 .navbar-collapse{

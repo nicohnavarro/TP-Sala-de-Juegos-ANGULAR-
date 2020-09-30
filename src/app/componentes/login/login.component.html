@@ -1,36 +1,52 @@
-<div class="container">
-    <div class="jumbotron">
-        <form action="return true;">
-            <div class="imgcontainer">
-                <img src="./assets/imagenes/login.png" alt="Avatar" class="avatar" max-width="104">
-            </div>
-
-            <div class="container control">
-                <label><b>Usuario</b></label>
-                <input type="text" placeholder="Usuario" [(ngModel)]="usuario" name="uname" required>
-
-                <label><b>Clave</b></label>
-                <input type="password" placeholder="Clave" [(ngModel)]="clave" name="psw" required>
-
-                <button *ngIf="logeando" (click)="MoverBarraDeProgreso()">Ingresar</button>
-
-                <div *ngIf="!logeando" class="progress">
-                    <div class="progress-bar progress-bar-info progress-bar-striped active" [class]="clase" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" [style.width]="ProgresoDeAncho">
-                        {{progresoMensaje}} - {{progreso}}%
-                    </div>
+<app-cabecera> </app-cabecera>
+<div class="container2">
+    <form action="return true;">
+        <div class="card">
+            <div class="jumbotron">
+                <div class="imgcontainer">
+                    <img src="./assets/imagenes/login.png" alt="Avatar" class="avatar" max-width="104">
                 </div>
 
-                <input type="checkbox" checked="checked"> Recordar mis datos
-            </div>
+                <div class="container control">
+                    <label><b>Usuario</b></label>
+                    <input type="text" placeholder="Usuario" [(ngModel)]="usuario" name="uname" required>
 
-            <div class="container" style="background-color:#f1f1f1">
-                <button type="button" class="cancelbtn">Cancelar</button>
-                <button type="button" class="aceptbtn" routerLink="/Registro">Registrarse</button>
-                <span class="psw">Te olvidaste <a href="#">la clave?</a></span>
-            </div>
+                    <label><b>Clave</b></label>
+                    <input type="password" placeholder="Clave" [(ngModel)]="clave" name="psw" required>
 
-        </form>
-    </div>
+                    <button *ngIf="logeando" (click)="MoverBarraDeProgreso()">Ingresar</button>
+
+                    <div *ngIf="!logeando" class="progress">
+                        <div class="progress-bar progress-bar-info progress-bar-striped active" [class]="clase"
+                            role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"
+                            [style.width]="ProgresoDeAncho">
+                            {{progresoMensaje}} - {{progreso}}%
+                        </div>
+                    </div>
+
+                    <span>Recordar mis datos</span><input type="checkbox" checked="checked">
+                </div>
+            </div>
+            <div class="container3">
+                <div class="users2">
+                    <button type="button" class="cancelbtn">Cancelar</button>
+                    <button type="button" class="aceptbtn" routerLink="/Registro">Registrarse</button>
+                    <span >Te olvidaste <a href="#">la clave?</a></span>
+                </div>
+
+                <div class="users">
+                    <button type="button" class="btn-user" (click)="ingresoAdmin()">Admin</button>
+                    <button type="button" class="btn-user" (click)="ingresoUsuario()">Usuario</button>
+                    <button type="button" class="btn-user" (click)="ingresoInvitado()">Invitado</button>
+                </div>
+            </div>
+        </div>
+
+
+
+    </form>
+
+
 </div>
 
 <!-- <form>

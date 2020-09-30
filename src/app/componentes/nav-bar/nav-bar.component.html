@@ -15,9 +15,14 @@
                 <a class="nav-link" routerLink="/QuienSoy">Quien Soy? <i class="fa fa-user"></i></a>
             </li>
         </ul>
-        <ul class="nav navbar-nav navbar-right" style="margin-left: 1rem;">
+        <ul class="nav navbar-nav navbar-right" style="margin-left: 1rem;" *ngIf="!usuario">
             <button class="btn btn-success my-2 my-sm-0" style="margin-right: 1rem;" routerLink="/Login">Ingresar</button>
             <button class="btn btn-outline-success my-2 my-sm-0" routerLink="/Registro">Registrarse</button>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right" style="margin-left: 1rem;" *ngIf="usuario">
+            <button class="btn btn-success my-2 my-sm-0" style="margin-right: 1rem;" routerLink="/Login">{{usuario}}</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" (click)="logOut()">Salir</button>
         </ul>
     </div>
 </nav>

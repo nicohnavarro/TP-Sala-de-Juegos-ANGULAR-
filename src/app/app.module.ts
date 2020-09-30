@@ -55,6 +55,10 @@ import { InputJugadoresComponent } from './componentes/input-jugadores/input-jug
 import { SexoPipe } from './pipes/sexo.pipe';
 import { MijuegoComponent } from './componentes/mijuego/mijuego.component';
 import { NavBarComponent } from './componentes/nav-bar/nav-bar.component';
+import { AngularFireModule} from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import {environment} from './../environments/environment';
+import {AngularFirestoreModule} from '@angular/fire/firestore';
 
 @NgModule({
   declarations: [
@@ -91,7 +95,9 @@ import { NavBarComponent } from './componentes/nav-bar/nav-bar.component';
     HttpClientModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyB6f8x4IjRlesQ3oETc6BXYQHVRTOlY3Ys'
-    })
+    }),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,AngularFirestoreModule
     // NgbModule.forRoot(MiRuteo),
     // importo el ruteo
     // RouterModule.forRoot(MiRuteo)

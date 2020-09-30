@@ -3,6 +3,7 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
 import {Subscription} from "rxjs";
 import {TimerObservable} from "rxjs/observable/TimerObservable";
+import { UserService } from '../../servicios/user.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -22,6 +23,7 @@ export class LoginComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
+    private usuariosService:UserService,
     private router: Router) {
       this.progreso=0;
       this.ProgresoDeAncho="0%";
@@ -35,6 +37,17 @@ export class LoginComponent implements OnInit {
     if (this.usuario === 'admin' && this.clave === 'admin') {
       this.router.navigate(['/Principal']);
     }
+
+    this.usuariosService.logIn(this.usuario,this.clave).subscribe( async resp =>{
+      if( resp ){
+        localStorage.setItem("user",this.usuario)
+        this.router.navigate(['/Principal']);
+      }else{
+
+      }
+      this.clave = null;
+      this.usuario = null;
+    });
   }
   MoverBarraDeProgreso() {
     
@@ -76,6 +89,19 @@ export class LoginComponent implements OnInit {
       }     
     });
     //this.logeando=true;
+  }
+
+  ingresoAdmin(){
+    this.usuario='admin@admin.com';
+    this.clave= '1111';
+  }
+  ingresoUsuario(){
+    this.usuario='usuario@usuario.com';
+    this.clave= '3333';
+  }
+  ingresoInvitado(){
+    this.usuario='invitado@invitado.com';
+    this.clave= '2222';
   }
 
 }
