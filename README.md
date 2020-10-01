@@ -21,7 +21,7 @@ Trabajo práctico obligatorio para la promoción directa
 
 _Trabajo Práctico desarrollado por_
 
-* **Nicolás Navarro 🚀** - *Trabajo Práctico de Anngular* - [nicohnavarro](https://github.com/nicohnavarro)
+* **Nicolás Navarro 🚀** - *Trabajo Práctico de Angular* - [nicohnavarro](https://github.com/nicohnavarro)
 
  🍺  🍺  🍺  🍺 
 
