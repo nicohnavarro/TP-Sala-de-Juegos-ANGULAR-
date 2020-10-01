@@ -1,0 +1,7 @@
+.caja {
+    height: 65vh;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: start;
+}

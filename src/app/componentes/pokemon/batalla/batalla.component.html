@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="container2">
+        <div class="tuPokemon" *ngIf="tuPokemon">
+
+            <div class="progress">
+                <div [class]="clase" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"
+                    [style.width]="ProgresoDeAncho">
+                    HP: {{tuPokemon.hp}}
+                </div>
+            </div>
+
+            <img [src]="tuPokemon.data.sprites.back_default" [class]="claseAtaque" alt="">
+            <button class="btn btn-success" *ngIf="tuRival && puedoAtacar" (click)="atacar()">Atacar!</button>
+
+        </div>
+        <div class="tuRival" *ngIf="tuRival">
+            <div class="progress">
+                <div [class]="clase" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"
+                    [style.width]="ProgresoDeAnchoRival">
+                    HP: {{tuRival.hp}}
+                </div>
+            </div>
+            <img [src]="tuRival.image" alt="" [class]="claseAtaqueRival">
+        </div>
+    </div>
+
+    <div class="popup" *ngIf="termino">
+        <div class="info">
+            <span>{{resultado}}</span>
+        </div>
+        <div class="btns">
+            <button class="btn btn-warning" (click)="reinicio($event)">Otra Vez!</button>
+            <button class="btn btn-danger">Listado</button>
+        </div>
+    </div>
+</div>

@@ -25,6 +25,8 @@ import { MijuegoComponent } from '../componentes/mijuego/mijuego.component';
 import { PiedraPapelTijeraComponent } from '../componentes/piedra-papel-tijera/piedra-papel-tijera.component';
 import { TatetiComponent } from '../componentes/tateti/tateti.component';
 import { AnagramaComponent } from '../componentes/anagrama/anagrama.component';
+import { PokemonGameComponent } from '../componentes/pokemon/pokemon-game/pokemon-game.component';
+import { ElegirPokemonComponent } from '../componentes/pokemon/elegir-pokemon/elegir-pokemon.component';
 
 
 // declaro donde quiero que se dirija
@@ -50,7 +52,9 @@ children:
       {path: 'Mijuego' , component: MijuegoComponent},
       {path: 'Tateti' , component: TatetiComponent},
       {path: 'Anagrama' , component: AnagramaComponent},
-      {path: 'Agilidad' , component: AgilidadAritmeticaComponent}]
+      {path: 'Agilidad' , component: AgilidadAritmeticaComponent},
+      {path: 'Pokemon' , component: PokemonGameComponent}
+    ]
 },
 {path: '**' , component: ErrorComponent},
 {path: 'error' , component: ErrorComponent}];

@@ -1,0 +1,5 @@
+<div class="caja">
+    <app-elegir-pokemon [pokemonSeleccionado1]="pokemon1" [pokemonSeleccionado2]="pokemon2" (tuPokemon)="tomarTuPokemon($event)" (tuRival)="tomarTuRival($event)"></app-elegir-pokemon>
+
+    <app-batalla [tuPokemon]="pokemonElegido" [tuRival]="rivalElegido" (ganador)="terminarJuego($event)"></app-batalla>
+</div>

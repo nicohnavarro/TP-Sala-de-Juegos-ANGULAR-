@@ -1,0 +1,93 @@
+.container{
+  margin: 0 auto;
+  margin-top: 10%;
+
+}
+.container2 {
+  display: flex;
+  background-color: rgba(56, 54, 54, 0.801);
+  justify-content: space-around;
+  border-radius: 2rem;
+  background-image: url("../../../../assets/imagenes/arena.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  border:1px solid white;
+  width: 50vw;
+  height: 40vh;
+  margin-right: 5%;
+}
+
+.progress {
+  width: 20vw;
+  margin-top: 1%;
+}
+
+.tuPokemon {
+  height: 25vh;
+  width: 25vw;
+  bottom: 0;
+  margin-top:15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tuPokemon img {
+  height: 80%;
+  width: 80%;
+}
+
+.tuPokemon button {
+  width: 50%;
+}
+
+.tuRival {
+  height: 20vh;
+  width: 20vw;
+  margin-top: 5%;
+}
+
+.tuRival img {
+  height: 100%;
+  width: 100%;
+}
+
+.miAtaque {
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: initial;
+}
+.victoria {
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+
+.popup {
+  margin: 3% auto;
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  height: 10vh;
+  background-color: rgba(255, 255, 255, 0.842);
+  border-radius: 2rem;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  display: flex;
+  margin-bottom: 1%;
+}
+.btns {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 2%;
+}
+

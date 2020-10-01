@@ -1,0 +1,11 @@
+<h1 style="color:white;text-align: center;">{{banner}}</h1>
+<div class="container">
+    <div class="card" *ngFor="let pokemon of pokemons">
+        <p>{{pokemon.nombre}}</p>
+        <img [src]=pokemon.image alt="">
+        <div class="botones">
+            <button class="btn btn-success" (click)="elegirPokemon(pokemon)">Elegir tu Pokemon!</button>
+            <button class="btn btn-danger"  (click)="elegirRival(pokemon)">Elegir tu Rival!</button>
+        </div>
+    </div>
+</div>

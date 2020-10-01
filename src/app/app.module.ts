@@ -61,6 +61,9 @@ import {environment} from './../environments/environment';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
 import { PiedraPapelTijeraComponent } from './componentes/piedra-papel-tijera/piedra-papel-tijera.component';
 import { TatetiComponent } from './componentes/tateti/tateti.component';
+import { ElegirPokemonComponent } from './componentes/pokemon/elegir-pokemon/elegir-pokemon.component';
+import { PokemonGameComponent } from './componentes/pokemon/pokemon-game/pokemon-game.component';
+import { BatallaComponent } from './componentes/pokemon/batalla/batalla.component';
 
 @NgModule({
   declarations: [
@@ -90,7 +93,10 @@ import { TatetiComponent } from './componentes/tateti/tateti.component';
     MijuegoComponent,
     NavBarComponent,
     PiedraPapelTijeraComponent,
-    TatetiComponent
+    TatetiComponent,
+    ElegirPokemonComponent,
+    PokemonGameComponent,
+    BatallaComponent
   ],
   imports: [
     BrowserModule,
